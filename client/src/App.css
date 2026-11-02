@@ -1,0 +1,147 @@
+
+.app {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+header {
+  background: #ffffff;
+  padding: 24px 30px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+header h1 {
+  margin: 0 0 15px;
+  color: #1e3a8a;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+main {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+  min-height: 350px;
+}
+
+
+/* Article cards */
+main article {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+main article h3 {
+  margin-top: 0;
+  color: #1e3a8a;
+}
+
+main article p {
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+/* Forms */
+form {
+  margin: 20px 0;
+}
+
+form div {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1f2937;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid #93c5fd;
+  border-color: #2563eb;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Buttons */
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  margin: 6px 8px 6px 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Comments */
+main section > section {
+  margin-top: 32px;
+  padding-top: 20px;
+  border-top: 1px solid #e2e8f0;
+}
+
+main section > section h3 {
+  color: #1e3a8a;
+}
+
+main section > section article {
+  background: #f1f5f9;
+  margin: 12px 0;
+}
+
+/* Error messages */
+[role="alert"] {
+  color: #b91c1c;
+  font-weight: 500;
+}
+
+/* Mobile screens */
+@media (max-width: 600px) {
+  .app {
+    padding: 12px;
+  }
+
+  header,
+  main {
+    padding: 20px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+}
